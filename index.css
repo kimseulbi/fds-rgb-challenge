@@ -1,0 +1,22 @@
+.option{
+ border:1px solid black;
+ width:30px;
+ height:30px;
+}
+
+.right-modal{
+  display:none;
+}
+
+.wrong-modal{
+  display:none;
+}
+
+.right-modal.open{
+  display:block;
+}
+
+/* .open &, .open ||*/
+.wrong-modal.open{
+  display:block;
+}
