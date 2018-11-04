@@ -251,7 +251,7 @@ body {
     border-radius: 5px;
     &:active,
     &:hover {
-      background: rgba(256,256,256,.2);
+      background: rgba(256, 256, 256, 0.2);
       border: 2px solid #fff;
     }
   }
@@ -263,6 +263,12 @@ body {
   }
 }
 
+.info i {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  font-size: 1.5rem;
+}
 .explanation {
   display: none;
 }
