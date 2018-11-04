@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RGB CHALLENGE</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="score">0</div>
-    <div class="color-text"></div>
-    <div class="option"></div>
-    <div class="option"></div>
-    <div class="option"></div>
-    
-    <div class="right-modal">THAT'S RIGHT!
-        <button class="next-stage">NEXT STAGE</button>
+    <div class="wrapper">
+        <div class="title">
+            <h1>THE GREAT<span>RGB</span>GUESSING CHALLENGE</h1>
+        </div>
+        <div class="score-wrap">SCORE: <span class="score">0</span></div>
+        <div class="color-wrap">
+            <div class="color-text"></div>
+            <div class="color-chip">
+                <div class="option"></div>
+                <div class="option"></div>
+                <div class="option"></div>
+            </div>
+        </div>
+        <i class="fas fa-question-circle"></i>
     </div>
-    <div class="wrong-modal">
-        TOO BAD!
-        <div>SCORE: <span class="score-in-modal"></span></div>
-        <button class="play-again">PLAY AGAIN</button>
+    <div class="overlay">
+        <div class="modal right">THAT'S RIGHT!
+            <button class="close next-stage">NEXT STAGE</button>
+        </div>
+        <div class="modal wrong">
+            TOO BAD!
+            <div>SCORE: <span class="score-in-modal"></span></div>
+            <button class="close play-again">PLAY AGAIN</button>
+        </div>
+    </div>
+    <div class="explanation">
+        <div class="bottom">
+            <i class="fas fa-times"></i>
+            <h2>Game explanation</h2>
+            <p>위에 표시된 RGB 코드에 맞는 색을 추측하세요. 색깔들을 연속으로 맞춰보세요.</p>
+            <div class="copyright">
+                <p>
+                    Made by
+                    <br>
+                    <a href="https://github.com/kimseulbi" target="blank">seulbi</a>
+                </p>
+            </div>
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
